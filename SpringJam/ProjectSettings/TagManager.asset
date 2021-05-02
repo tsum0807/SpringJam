@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Vines
+  - Enemy
+  - Goal
+  - Seed
+  - Bush
   layers:
   - Default
   - TransparentFX
@@ -11,12 +16,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Tiles
+  - Platforms
+  - PlantNoCollision
+  - Player
+  - Plants
+  - Enemies
   - 
   - 
   - 
@@ -40,4 +45,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2380605853
+    locked: 0
+  - name: Tilemap
+    uniqueID: 189460507
+    locked: 0
+  - name: Player
+    uniqueID: 2713953871
+    locked: 0
+  - name: Foreground
+    uniqueID: 1930116305
+    locked: 0
+  - name: UI
+    uniqueID: 2232504359
     locked: 0
