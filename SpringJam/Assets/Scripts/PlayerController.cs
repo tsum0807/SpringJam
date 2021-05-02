@@ -190,8 +190,8 @@ public class PlayerController : MonoBehaviour
             //die respawn current level with full health
             _health = 3;
             // refresh seeds
-            GameManager.Instance.GiveSeedsForLevel(GameManager.Instance.curLevel);
-            GameManager.Instance.SpawnPlayerAtLevel(GameManager.Instance.curLevel);
+            GameManager.Instance.curLevel--;
+            GameManager.Instance.NextLevel();
         }
 
         GameManager.Instance.UpdateHearts();

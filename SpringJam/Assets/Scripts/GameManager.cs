@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject ShovelBtn;
     [SerializeField] private GameObject HeartsContainer;
     [SerializeField] private GameObject TutorialCanvas;
+    [SerializeField] private GameObject SeedDescriptionCanvas;
     [SerializeField] private Sprite[] seedSprites;
     [SerializeField] private Sprite[] HeartSprites;
 
@@ -96,6 +97,7 @@ public class GameManager : MonoBehaviour
         SpawnPlayerAtLevel(curLevel);
         GiveSeedsForLevel(curLevel);
         EnableAllSeedsInLevel(curLevel);
+        ShowSeedDescInLevel(curLevel);
         UpdateHearts();
     }
 
@@ -112,6 +114,17 @@ public class GameManager : MonoBehaviour
                 child.gameObject.SetActive(true);
             }
         }
+    }
+
+    private void ShowSeedDescInLevel(int lvl){
+        foreach(Transform child in SeedDescriptionCanvas.transform){
+            // disable all of them first
+            child.gameObject.SetActive(false);
+        }
+        // enable one on this level only
+        Transform seedDesc = SeedDescriptionCanvas.transform.GetChild(lvl-1);
+        if(seedDesc)
+            seedDesc.gameObject.SetActive(true);
     }
 
     public void SpawnPlayerAtLevel(int lvl){
