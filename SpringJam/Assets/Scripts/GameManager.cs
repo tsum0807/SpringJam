@@ -130,6 +130,7 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayerAtLevel(int lvl){
         Vector3 spawn = LevelsContainer.transform.GetChild(curLevel-1).Find("Spawn").position;
         player.transform.position = spawn;
+        player.GetComponent<PlayerController>()._groundDetector.ClearAllGround();
     }
 
     public void GiveSeedsForLevel(int lvl){

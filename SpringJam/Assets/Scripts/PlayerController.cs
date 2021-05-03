@@ -14,10 +14,10 @@ public class PlayerController : MonoBehaviour
     private static float GRAVITY = 1f;
 
     public int _health = 3;
+    public GroundDetector _groundDetector;
 
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
-    private GroundDetector _groundDetector;
     private AudioSource _audio;
     private Animator _animator;
 
@@ -236,7 +236,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void CallNextLevel(){
-        _groundDetector.ClearAllGround();
+        // _groundDetector.ClearAllGround();
         GameManager.Instance.NextLevel();
         _isLoadingNext = false;
         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().
