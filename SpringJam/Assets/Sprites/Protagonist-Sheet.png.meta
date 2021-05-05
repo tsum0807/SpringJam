@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -6242206802113664947
     second: Protagonist-Sheet_5
+  - first:
+      213: 1493811575040847306
+    second: Protagonist-Sheet_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,7 +141,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,9 +160,9 @@ TextureImporter:
       name: Protagonist-Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,9 +181,9 @@ TextureImporter:
       name: Protagonist-Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -199,9 +202,9 @@ TextureImporter:
       name: Protagonist-Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 96
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -220,9 +223,9 @@ TextureImporter:
       name: Protagonist-Sheet_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -241,9 +244,9 @@ TextureImporter:
       name: Protagonist-Sheet_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 160
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -254,6 +257,27 @@ TextureImporter:
       bones: []
       spriteID: d48ec717cf93f59a0800000000000000
       internalID: -6242206802113664947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd2da386b51bb410800000000000000
+      internalID: 1493811575040847306
       vertices: []
       indices: 
       edges: []

@@ -77,6 +77,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SkipToLevel(int lvl){
+        curLevel = lvl-1;
+        NextLevel();
+    }
+
     public void NextLevel(){
         if(curLevel > 4){
             _isGameCompleted = true;
@@ -122,6 +127,8 @@ public class GameManager : MonoBehaviour
             child.gameObject.SetActive(false);
         }
         // enable one on this level only
+        if(lvl > 4)
+            return;
         Transform seedDesc = SeedDescriptionCanvas.transform.GetChild(lvl-1);
         if(seedDesc)
             seedDesc.gameObject.SetActive(true);
